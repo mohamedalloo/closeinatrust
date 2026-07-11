@@ -327,13 +327,7 @@ const SITE = {
       "meta": "LLC HELOC \u00b7 Atlanta, GA"
     }
   ],
-  "confetti": [
-    "#8a6d3b",
-    "#c9ab6e",
-    "#f1ebdd",
-    "#24344d",
-    "#6f5527"
-  ]
+  "confetti": ["#10b981", "#34d399", "#f5b942", "#ffffff", "#1a2440"]
 };
 
 const ICONS = {
