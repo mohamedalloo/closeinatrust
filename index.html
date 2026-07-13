@@ -19,46 +19,105 @@
   <meta name="twitter:card" content="summary">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "FinancialService",
-        "@id": "https://closeinatrust.com/#org",
-        "name": "CloseInATrust",
-        "url": "https://closeinatrust.com/",
-        "parentOrganization": { "@type": "Organization", "name": "AdaptLend", "url": "https://adaptlend.com/", "parentOrganization": { "@type": "Organization", "name": "Honest Casa LLC", "url": "https://honestcasa.com/", "identifier": { "@type": "PropertyValue", "name": "NMLS ID", "value": "1566096" } } },
-        "description": "CloseInATrust matches homeowners and real-estate investors with licensed specialists whose lenders close mortgages vested in revocable living trusts, irrevocable trusts, and LLCs — purchases and refinances, including DSCR loans that qualify on the property's rent.",
-        "areaServed": "US",
-        "knowsAbout": [
-          "Mortgages vested in living trusts",
-          "Buying a house in a trust",
-          "LLC mortgages and DSCR loans",
-          "Refinancing property held in a trust",
-          "Garn-St Germain Act trust transfers"
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FinancialService",
+      "@id": "https://closeinatrust.com/#org",
+      "name": "CloseInATrust",
+      "url": "https://closeinatrust.com/",
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://adaptlend.com/#org",
+        "name": "AdaptLend",
+        "url": "https://adaptlend.com/"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://closeinatrust.com/#website",
-        "url": "https://closeinatrust.com/",
-        "name": "CloseInATrust",
-        "publisher": { "@id": "https://closeinatrust.com/#org" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "Can a trust get a mortgage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many lenders close loans vested in revocable living trusts, and specialist lenders handle irrevocable trusts too. The trustee signs, the trust holds title, and your estate plan stays intact from day one." } },
-          { "@type": "Question", "name": "Can I buy a house in an LLC and get a mortgage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — DSCR and other investor programs routinely close with the LLC on title. In fact, most DSCR lenders prefer entity vesting. The rent qualifies the loan, not your personal income." } },
-          { "@type": "Question", "name": "Why did my bank say I have to take the house out of my trust?", "acceptedAnswer": { "@type": "Answer", "text": "Conventional processing often can't handle trust vesting cleanly, so banks ask you to deed the property out, close, then deed it back — extra recording costs, title work, and risk of forgetting the re-transfer. Lenders who close in the trust directly make that shuffle unnecessary." } },
-          { "@type": "Question", "name": "Can I transfer my home into my trust after closing instead?", "acceptedAnswer": { "@type": "Answer", "text": "For your own home in a revocable living trust, usually yes: federal law (the Garn-St Germain Act) blocks lenders from calling the loan due for that transfer. It's a legitimate alternative for primary residences — but it doesn't help LLCs, irrevocable trusts, or investment property, where closing in the entity is the clean path." } },
-          { "@type": "Question", "name": "Is it harder to refinance a property that's already in a trust?", "acceptedAnswer": { "@type": "Answer", "text": "With the right lender, no — the loan closes with the trust remaining on title. With the wrong lender, you'll be asked to deed the property out and back. Matching to a lender who closes in trusts is the entire game." } },
-          { "@type": "Question", "name": "Do LLC mortgages cost more?", "acceptedAnswer": { "@type": "Answer", "text": "DSCR and entity-vested investor loans generally price somewhat above conventional owner-occupied rates — that's the cost of qualifying on rent with entity protection. Specialists shop multiple lenders for the strongest terms your deal supports." } }
-        ]
+      "description": "CloseInATrust matches homeowners and real-estate investors with licensed specialists whose lenders close mortgages vested in revocable living trusts, irrevocable trusts, and LLCs — purchases and refinances, including DSCR loans that qualify on the property's rent.",
+      "areaServed": "US",
+      "knowsAbout": [
+        "Mortgages vested in living trusts",
+        "Buying a house in a trust",
+        "LLC mortgages and DSCR loans",
+        "Refinancing property held in a trust",
+        "Garn-St Germain Act trust transfers"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NMLS ID",
+          "value": "1566096"
+        }
+      ],
+      "sameAs": [
+        "https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1566096"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://closeinatrust.com/#website",
+      "url": "https://closeinatrust.com/",
+      "name": "CloseInATrust",
+      "publisher": {
+        "@id": "https://closeinatrust.com/#org"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a trust get a mortgage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many lenders close loans vested in revocable living trusts, and specialist lenders handle irrevocable trusts too. The trustee signs, the trust holds title, and your estate plan stays intact from day one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I buy a house in an LLC and get a mortgage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — DSCR and other investor programs routinely close with the LLC on title. In fact, most DSCR lenders prefer entity vesting. The rent qualifies the loan, not your personal income."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did my bank say I have to take the house out of my trust?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conventional processing often can't handle trust vesting cleanly, so banks ask you to deed the property out, close, then deed it back — extra recording costs, title work, and risk of forgetting the re-transfer. Lenders who close in the trust directly make that shuffle unnecessary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I transfer my home into my trust after closing instead?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For your own home in a revocable living trust, usually yes: federal law (the Garn-St Germain Act) blocks lenders from calling the loan due for that transfer. It's a legitimate alternative for primary residences — but it doesn't help LLCs, irrevocable trusts, or investment property, where closing in the entity is the clean path."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it harder to refinance a property that's already in a trust?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With the right lender, no — the loan closes with the trust remaining on title. With the wrong lender, you'll be asked to deed the property out and back. Matching to a lender who closes in trusts is the entire game."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do LLC mortgages cost more?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DSCR and entity-vested investor loans generally price somewhat above conventional owner-occupied rates — that's the cost of qualifying on rent with entity protection. Specialists shop multiple lenders for the strongest terms your deal supports."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
